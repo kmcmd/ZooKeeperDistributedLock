@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackageId>ZooKeeperDistributedLock</PackageId>
+	<Version>1.0.0-beta</Version>
+	<Authors>KamalMansouri</Authors>
+	<Description>A distributed lock implementation for .NET using Apache ZooKeeper.</Description>
+	<PackageTags>distributed-lock; zookeeper; dotnet</PackageTags>
+	<RepositoryUrl>https://github.com/kmcmd/ZooKeeperDistributedLock</RepositoryUrl>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
+    <PackageReference Include="ZooKeeperNetEx" Version="3.4.12.4" />
+  </ItemGroup>
+
+</Project>
