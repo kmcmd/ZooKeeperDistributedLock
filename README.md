@@ -4,6 +4,12 @@
 
 A robust and easy-to-use distributed lock library for .NET, powered by Apache ZooKeeper. This library enables developers to synchronize access to shared resources across distributed systems with a simple, async-friendly API. Whether you're building microservices, distributed applications, or systems requiring high concurrency, `ZooKeeperDistributedLock` ensures reliable and fair locking.
 
+## Installation
+
+```bash
+dotnet add package ZooKeeperDistributedLock
+```
+
 ## Features
 
 - **Asynchronous API**: Fully async/await compatible for modern .NET applications.
@@ -77,7 +83,7 @@ class Program
             try
             {
                 Console.WriteLine("Lock acquired! Performing critical operation...");
-                await Task.Delay(1000); // Simulate work
+                await Task.Delay(1000);
             }
             finally
             {
@@ -116,6 +122,14 @@ else
     Console.WriteLine("Failed to acquire lock within timeout.");
 }
 ```
+
+## Contributing
+Contributions are welcome! Please submit issues or pull requests to the GitHub repository.
+
+## Support
+For questions or support, open an issue on GitHub or reach out via kamalmansouri91[at]gmail.com Check out the documentation for more details.
+
+
 
 
 
